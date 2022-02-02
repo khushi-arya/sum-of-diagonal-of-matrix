@@ -22,6 +22,7 @@ int main(){
         }
         cout<<"\n";
     }
+    //sum of diagonals
     int sum=0;
     for( i=0;i<n;i++){
         for(j=0;j<m;j++){
@@ -30,6 +31,16 @@ int main(){
         }
         }
     } 
-    cout<<"sum of diagonals:  "<<sum;
+    cout<<"sum of diagonals:  "<<sum<<endl;
+    //sum column wise
+    for( i=0;i<n;i++){
+         int sum=0;
+        for(j=0;j<m;j++){
+         sum=sum+arr[i][j];
+         
+        }
+       
+        cout<<"\n sum of colmun :  "<<sum<<endl;
+   } 
    return 0;
 }
